@@ -639,9 +639,8 @@ rest of the page. Its position is
     </form>
 </div>
 
-<!--TODO:-->
-<!--3.2.4.7 Overriding Bootstrap Styles-->
-<!--Bootstrap makes it easy to apply professional styles, but sometimes we will need override some of the styles declared by Bootstrap. Complete the exercise described in section 6.3 Overriding Bootstrap Styles in the Full Stack Developer book.-->
+<button class="btn btn-danger" style="border-radius: 0">Overrode this bootstrap button's border radius to make it sharp edge</button>
+
 
 <h2><a href="https://getbootstrap.com/docs/5.1/components/navs-tabs/">Tabs</a></h2>
 <ul class="nav nav-tabs">
@@ -658,11 +657,24 @@ rest of the page. Its position is
         <a class="nav-link disabled" href="#" tabindex="-1">Disabled</a>
     </li>
 </ul>
+<br>
+Navigation with pills
+<ul class="nav nav-pills">
+    <li class="nav-item">
+        <a class="nav-link active" href="#">Active</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link disabled" href="#">Disabled</a>
+    </li>
+</ul>
 
-<!--TODO:-->
-<!--3.2.5.2 Navigating with Pills-->
-<!--Pills are another navigation widget listing several links. Complete the exercise described in section 6.2 Implementing Navigation Pills in the Full Stack Developer book.-->
-
+<br>
 <h2>
     <a href="https://getbootstrap.com/docs/5.1/components/card/">
         Cards
@@ -680,7 +692,14 @@ rest of the page. Its position is
     </div>
 </div>
 
-<!--TODO: 3.2.6 use m p instead of css for margin padding position-->
+<br>
+<p class="m-4 p-4"> used m and p for margin padding!</p>
+<p class="ms-4"> used m s alone margin !</p>
+<div class=" text-bg-dark">
+    <p class="pt-5"> used p alone for padding!</p>
+</div>
+<br>
+
 <h2>Simple icons</h2>
 <i class="fa fa-cog"></i>
 <i class="fa fa-heart"></i>
