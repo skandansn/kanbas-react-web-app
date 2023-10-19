@@ -11,7 +11,7 @@ function Grades() {
     const enrollments = db.enrollments.filter((enrollment) => enrollment.course === courseId);
 
     return (
-        <div className="d-flex flex-row" style={{flex: 1, marginRight: "50px"}}>
+        <div className="d-flex flex-row" style={{flex: 1}}>
             <div style={{display: "flex", flexDirection: "column", width: "100%"}}>
                 <div>
                     <div className="">
