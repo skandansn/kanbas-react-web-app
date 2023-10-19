@@ -1,0 +1,97 @@
+
+a {
+    color: red;
+}
+
+body {
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#sidebar i {
+    font-size: 30px;
+    display: block;
+    padding: 5px;
+
+}
+
+#sidebar a{
+    color: #000;
+    text-decoration: none;
+
+}
+
+
+#sidebar2 i {
+    font-size: 30px;
+    padding: 7px;
+}
+
+#sideBar2 a {
+    color: #000;
+    text-decoration: none;
+    text-align-all: center;
+}
+
+#contentProfile a {
+    text-decoration: none;
+    text-align-all: center;
+}
+
+#sideBar2 {
+    overflow-wrap:break-word;
+}
+
+.course-card {
+    min-width: 250px;
+    max-width: 270px;
+    margin: 15px;
+}
+
+#moduleContent a{
+    text-decoration: none;
+    color: black;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: flex-end;
+    background-color: DodgerBlue;
+}
+
+.flex-container > div {
+    background-color: #f1f1f1;
+    width: 100px;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+}
+
+#homePage a {
+    text-decoration: none;
+
+}
+
+.moduleItem {
+    margin: 5px;
+    padding: 5px;
+}
+
+.moduleItem ul li {
+    list-style-type: none;
+    border-left: #5ec15b 3px solid;
+}
+
+#courseSettings {
+    padding: 5px;
+
+}
+
+#courseSettings td,th {
+    border-bottom: none;
+}
+
+button {
+    border-radius: 0;
+}
