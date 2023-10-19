@@ -4,9 +4,10 @@ function JsonStringify() {
 
     return (
         <div>
-    <h3>JSON Stringify</h3>
-    squares = { JSON.stringify(squares) } <br />
-    </div>
+            <h3>JSON Stringify</h3>
+            squares = {JSON.stringify(squares)} <br/>
+        </div>
     );
 }
+
 export default JsonStringify

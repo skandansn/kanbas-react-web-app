@@ -1,5 +1,6 @@
 import Assignment3 from "./a3";
 import Nav from "../Nav";
+
 function Labs() {
     return (
         <div>
@@ -8,4 +9,5 @@ function Labs() {
         </div>
     );
 }
+
 export default Labs;

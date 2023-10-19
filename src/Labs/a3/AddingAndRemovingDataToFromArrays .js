@@ -8,8 +8,8 @@ function AddingAndRemovingDataToFromArrays() {
     return (
         <div>
             <h4>Adding and Removing Data to/from Arrays</h4>
-            numberArray1 = { numberArray1 }<br />
-            stringArray1 = { stringArray1 }<br />
+            numberArray1 = {numberArray1}<br/>
+            stringArray1 = {stringArray1}<br/>
         </div>
     );
 }

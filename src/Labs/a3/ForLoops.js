@@ -11,8 +11,8 @@ function ForLoops() {
     return (
         <div>
             <h4>Looping through arrays</h4>
-            stringArray1 = { stringArray1 }<br />
-            stringArray2 = { stringArray2 }<br />
+            stringArray1 = {stringArray1}<br/>
+            stringArray2 = {stringArray2}<br/>
         </div>
     );
 }

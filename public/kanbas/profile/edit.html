@@ -7,7 +7,7 @@
 </head>
 <body>
 <div class="h-100" style="display: flex">
-    <div id="sidebar" class="bg-black vh-100" style="width: 85px;" align="center">
+    <div align="center" class="bg-black vh-100" id="sidebar" style="width: 85px;">
         <div style="margin: 5px; padding: 7px"><a class="text-white" href="../../index.html"><i
                 class="fa-solid fa-n text-danger"></i></a></div>
         <div class="bg-white" style="margin: 0; padding: 7px"><a class="text-danger" href="index.html"><i
@@ -37,7 +37,9 @@
             <div style="display: flex">
                 <div id="sideBar2" style=" width: 200px">
                     <div style="margin: 7px; padding: 7px"><a class="text-danger" href="#">Notifications</a></div>
-                    <div style="border-left:2px solid black; margin: 7px; padding: 7px"><a class="text-black " href="index.html">Profile</a></div>
+                    <div style="border-left:2px solid black; margin: 7px; padding: 7px"><a class="text-black "
+                                                                                           href="index.html">Profile</a>
+                    </div>
                     <div style="margin: 7px; padding: 7px"><a class="text-danger" href="#">Files</a></div>
                     <div style="margin: 7px; padding: 7px"><a class="text-danger" href="#">Settings</a></div>
                     <div style="margin: 7px; padding: 7px"><a class="text-danger" href="#">ePortfolios</a></div>
@@ -48,9 +50,9 @@
                     <div style="margin: 5px; padding: 7px"><a class="text-danger" href="#">Global Announcements</a>
                     </div>
                 </div>
-                <div style=" flex: 2.5" id="contentProfile">
+                <div id="contentProfile" style=" flex: 2.5">
                     <div>
-                        <i style="font-size: 1000%;" class="fa-user-circle fa-solid"></i>
+                        <i class="fa-user-circle fa-solid" style="font-size: 1000%;"></i>
 
                     </div>
                     <br>
@@ -93,15 +95,15 @@
                                 <br>
                             </div>
                             <div style=" margin-left: 10px;flex: 0.2">
-                                <i  class="ms-1 mt-5 fa-solid fa-arrow-right"></i>
+                                <i class="ms-1 mt-5 fa-solid fa-arrow-right"></i>
                             </div>
                             <div style="flex: 1">
                                 <h4>URL</h4>
                                 <div style="display: flex;">
-                                    <input class="form-control" type="text"
-                                           value="www.youtube.com/@skandansn" style="">
+                                    <input class="form-control" style=""
+                                           type="text" value="www.youtube.com/@skandansn">
                                     <div style="text-align: center">
-                                        <a  href="#"><i class="fa-x fa-solid mt-3"></i> </a>
+                                        <a href="#"><i class="fa-x fa-solid mt-3"></i> </a>
                                     </div>
                                 </div>
                                 <br>
@@ -113,9 +115,11 @@
                         <br>
                         <hr>
                         <div style="float: right">
-                            <button style="border-radius: 0" class="btn btn-light" onclick="location.href = 'index.html'">Cancel</button>
-                            <button style="border-radius: 0" class="btn btn-danger"
-                                    onclick="location.href = 'index.html'">Save Profile
+                            <button class="btn btn-light" onclick="location.href = 'index.html'"
+                                    style="border-radius: 0">Cancel
+                            </button>
+                            <button class="btn btn-danger" onclick="location.href = 'index.html'"
+                                    style="border-radius: 0">Save Profile
                             </button>
                         </div>
 
@@ -124,7 +128,7 @@
 
                 </div>
                 <div style="flex: 0.5; float: right; margin-right: 5% ">
-                    <button class="btn btn-light" style="border-radius: 0" onclick="location.href = 'index.html'">
+                    <button class="btn btn-light" onclick="location.href = 'index.html'" style="border-radius: 0">
                         <i class="fa fa-pencil"></i> Cancel Editing
                     </button>
                 </div>

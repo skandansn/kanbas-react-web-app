@@ -1,6 +1,7 @@
-import { Link, useLocation } from "react-router-dom";
+import {Link, useLocation} from "react-router-dom";
+
 function Nav() {
-    const { pathname } = useLocation();
+    const {pathname} = useLocation();
     return (
         <nav className="nav nav-tabs mt-2">
             <Link to="/Labs/a3"
@@ -12,4 +13,5 @@ function Nav() {
         </nav>
     );
 }
+
 export default Nav;

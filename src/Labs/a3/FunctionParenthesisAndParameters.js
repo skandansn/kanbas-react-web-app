@@ -6,12 +6,13 @@ function FunctionParenthesisAndParameters() {
     return (
         <>
             <h2>Parenthesis and Parameters</h2>
-            twoSquared = {twoSquared}<br />
-            square(2) = {square(2)}<br />
-            threePlusOne = {threePlusOne}<br />
-            plusOne(3) = {plusOne(3)}<br />
+            twoSquared = {twoSquared}<br/>
+            square(2) = {square(2)}<br/>
+            threePlusOne = {threePlusOne}<br/>
+            plusOne(3) = {plusOne(3)}<br/>
         </>
     )
 
 }
+
 export default FunctionParenthesisAndParameters

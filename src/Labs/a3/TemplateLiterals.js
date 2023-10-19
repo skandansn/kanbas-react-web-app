@@ -15,11 +15,12 @@ function TemplateLiterals() {
     return (
         <div>
             <h1>Template Literals</h1>
-            result1 = { result1 }<br />
-            result2 = { result2 }<br />
-            greeting1 = { greeting1 }<br />
-            greeting2 = { greeting2 }<br />
+            result1 = {result1}<br/>
+            result2 = {result2}<br/>
+            greeting1 = {greeting1}<br/>
+            greeting2 = {greeting2}<br/>
         </div>
     );
 }
+
 export default TemplateLiterals

@@ -6,8 +6,8 @@
     <link href="./index.css" rel="stylesheet"/>
 </head>
 <body>
-<div id="homePage" style="display: flex" class="">
-    <div id="sidebar" class=" bg-black vh-100 d-none d-sm-block " style="width: 85px;" align="center">
+<div class="" id="homePage" style="display: flex">
+    <div align="center" class=" bg-black vh-100 d-none d-sm-block " id="sidebar" style="width: 85px;">
         <div style="margin: 5px; padding: 7px"><a class="text-white" href="../index.html"><i
                 class="fa-solid fa-n text-danger"></i></a></div>
         <div style="margin: 5px; padding: 7px"><a class="text-white" href="./profile/index.html"><i
@@ -28,25 +28,26 @@
                 class="fa-solid fa-question-circle text-danger"></i>Help</a></div>
     </div>
     <div class="flex-fill " style="margin-left: 20px;display: flex; flex-direction: column;">
-        <div style="display: flex; flex-direction: row" class="">
+        <div class="" style="display: flex; flex-direction: row">
             <i class="m-lg-3 mt-3 text-danger fa-solid fa-bars" style="font-size: large"></i>
-            <nav style="--bs-breadcrumb-divider: '>';" class="mt-3" aria-label="breadcrumb">
+            <nav aria-label="breadcrumb" class="mt-3" style="--bs-breadcrumb-divider: '>';">
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item"><a href="#">CS5610.12631.202410</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">Home</li>
+                    <li aria-current="page" class="breadcrumb-item active">Home</li>
                 </ol>
             </nav>
         </div>
         <hr>
         <div class="d-flex " style="">
-            <div id="sideBar2" style=" width: 200px;" class="d-none d-sm-block">
+            <div class="d-none d-sm-block" id="sideBar2" style=" width: 200px;">
                 <div style="border-left:2px solid black; margin: 7px; padding: 7px"><a class="text-black"
                                                                                        href="#">Home</a>
                 </div>
                 <div style="margin: 7px; padding: 7px"><a class="text-danger " href="#">Modules</a></div>
                 <div style="margin: 7px; padding: 7px"><a class="text-danger" href="#">Piazza</a></div>
                 <div style="margin: 7px; padding: 7px"><a class="text-danger" href="#">Zoom Meetings</a></div>
-                <div style="margin: 7px; padding: 7px"><a class="text-danger" href="./assignments/index.html">Assignments</a></div>
+                <div style="margin: 7px; padding: 7px"><a class="text-danger" href="./assignments/index.html">Assignments</a>
+                </div>
                 <div style="margin: 7px; padding: 7px"><a class="text-danger" href="#">Quizzes</a></div>
                 <div style="margin: 7px; padding: 7px"><a class="text-danger" href="grades.html">Grades</a></div>
                 <div style="margin: 7px; padding: 7px"><a class="text-danger" href="#">People</a>
@@ -67,10 +68,11 @@
                 <div style="display: flex; flex-direction: column; width: 100%">
                     <div class="">
                         <div class="float-end">
-                            <button style="border-radius: 0"  class="btn btn-secondary">Collapse All</button>
-                            <button style="border-radius: 0" class="btn btn-secondary">View Progress</button>
+                            <button class="btn btn-secondary" style="border-radius: 0">Collapse All</button>
+                            <button class="btn btn-secondary" style="border-radius: 0">View Progress</button>
                             <div class="dropdown d-inline">
-                                <button style="border-radius: 0" class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <button aria-expanded="false" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown"
+                                        style="border-radius: 0" type="button">
                                     <i class="fa-solid fa-check-circle" style="color: green;"></i> Publish All
                                 </button>
                                 <ul class="dropdown-menu">
@@ -79,8 +81,11 @@
                                     <li><a class="dropdown-item" href="#">Something else here</a></li>
                                 </ul>
                             </div>
-                            <button style="border-radius: 0"  class="btn btn-danger"><i class="fa-solid fa-plus"></i> Module</button>
-                            <button style="border-radius: 0"  class="btn btn-secondary" ><i class="fa-solid fa-list-dots"> </i></button>
+                            <button class="btn btn-danger" style="border-radius: 0"><i class="fa-solid fa-plus"></i>
+                                Module
+                            </button>
+                            <button class="btn btn-secondary" style="border-radius: 0"><i
+                                    class="fa-solid fa-list-dots"> </i></button>
                         </div>
 
                     </div>
@@ -89,7 +94,7 @@
 
                         <div class="moduleItem">
                             <ul class="list-group">
-                                <li class="list-group-item-secondary active p-2" aria-current="true">
+                                <li aria-current="true" class="list-group-item-secondary active p-2">
                                     <b>Week 0 - INTRO</b>
                                     <div class="float-end">
                                         <i class="fa-solid fa-check-circle" style="color: green"></i>
@@ -99,7 +104,7 @@
                                 </li>
                                 <li class="list-group-item"><b>LEARNING OBJECTIVES</b>
                                     <div class="float-end">
-                                    <i class="fa-check-circle fa-solid" style="color: green"></i>
+                                        <i class="fa-check-circle fa-solid" style="color: green"></i>
                                         <i class="ms-2 fa-solid fa-ellipsis-vertical"></i>
                                     </div>
                                 </li>
@@ -133,7 +138,8 @@
                                         <i class="ms-2 fa-solid fa-ellipsis-vertical"></i>
                                     </div>
                                 </li>
-                                <li class="list-group-item ps-5">Full Stack Developer - Chapter 2 - Creating UI with HTML
+                                <li class="list-group-item ps-5">Full Stack Developer - Chapter 2 - Creating UI with
+                                    HTML
                                     <div class="float-end">
                                         <i class="fa-check-circle fa-solid" style="color: green"></i>
                                         <i class="ms-2 fa-solid fa-ellipsis-vertical"></i>
@@ -145,13 +151,17 @@
                                         <i class="ms-2 fa-solid fa-ellipsis-vertical"></i>
                                     </div>
                                 </li>
-                                <li class="list-group-item ps-5"><a href="https://docs.google.com/presentation/d/1yb_fQd5MhVuFczb5F5II0CoDkVJALFqxUnuwPAXiOAU/edit#slide=id.g40a3481019_0_0">Introduction to Web Development <i class="ms-2 fa-solid fa-link"></i></a>
+                                <li class="list-group-item ps-5"><a
+                                        href="https://docs.google.com/presentation/d/1yb_fQd5MhVuFczb5F5II0CoDkVJALFqxUnuwPAXiOAU/edit#slide=id.g40a3481019_0_0">Introduction
+                                    to Web Development <i class="ms-2 fa-solid fa-link"></i></a>
                                     <div class="float-end">
                                         <i class="fa-check-circle fa-solid" style="color: green"></i>
                                         <i class="ms-2 fa-solid fa-ellipsis-vertical"></i>
                                     </div>
                                 </li>
-                                <li class="list-group-item ps-5"><a href="https://docs.google.com/presentation/d/16yDwIH8np-tQL85g4bpmrsDfO8LaW38jr-fMQirLnoQ/edit#slide=id.p">Introduction to NodeJS <i class="ms-2 fa-solid fa-link"></i></a>
+                                <li class="list-group-item ps-5"><a
+                                        href="https://docs.google.com/presentation/d/16yDwIH8np-tQL85g4bpmrsDfO8LaW38jr-fMQirLnoQ/edit#slide=id.p">Introduction
+                                    to NodeJS <i class="ms-2 fa-solid fa-link"></i></a>
                                     <div class="float-end">
                                         <i class="fa-check-circle fa-solid" style="color: green"></i>
                                         <i class="ms-2 fa-solid fa-ellipsis-vertical"></i>
@@ -161,7 +171,7 @@
                         </div>
                         <div class="moduleItem">
                             <ul class="list-group">
-                                <li class="list-group-item-secondary active p-2" aria-current="true">
+                                <li aria-current="true" class="list-group-item-secondary active p-2">
                                     <b>Week 1 - CSS</b>
                                     <div class="float-end">
                                         <i class="ms-2 fa-solid fa-plus"></i>
@@ -169,15 +179,19 @@
                                     </div>
                                 </li>
 
-                                <li class="list-group-item"><b>CSS INTRODUCTION</b> </li>
+                                <li class="list-group-item"><b>CSS INTRODUCTION</b></li>
                                 <li class="list-group-item ps-5">Exercises</li>
                                 <li class="list-group-item"><b>BOOTSTRAP</b></li>
                                 <li class="list-group-item ps-5">Bootstrap exercise and examples</li>
                                 <li class="list-group-item"><b>SLIDES</b>
                                 </li>
-                                <li class="list-group-item ps-5"><a href="https://docs.google.com/presentation/d/1yb_fQd5MhVuFczb5F5II0CoDkVJALFqxUnuwPAXiOAU/edit#slide=id.g40a3481019_0_0">Introduction to CSS <i class="ms-2 fa-solid fa-link"></i></a>
+                                <li class="list-group-item ps-5"><a
+                                        href="https://docs.google.com/presentation/d/1yb_fQd5MhVuFczb5F5II0CoDkVJALFqxUnuwPAXiOAU/edit#slide=id.g40a3481019_0_0">Introduction
+                                    to CSS <i class="ms-2 fa-solid fa-link"></i></a>
                                 </li>
-                                <li class="list-group-item ps-5"><a href="https://docs.google.com/presentation/d/16yDwIH8np-tQL85g4bpmrsDfO8LaW38jr-fMQirLnoQ/edit#slide=id.p">Introduction to Bootstrap <i class="ms-2 fa-solid fa-link"></i></a>
+                                <li class="list-group-item ps-5"><a
+                                        href="https://docs.google.com/presentation/d/16yDwIH8np-tQL85g4bpmrsDfO8LaW38jr-fMQirLnoQ/edit#slide=id.p">Introduction
+                                    to Bootstrap <i class="ms-2 fa-solid fa-link"></i></a>
                                 </li>
                             </ul>
                         </div>
@@ -192,29 +206,47 @@
                 <div>
                     <div class="ms-4 d-none d-lg-block ">
                         <h6>Course Status</h6>
-                        <button style="border-radius: 0"  class="btn btn-secondary"><i class="fa-solid fa-ban"></i> Unpublish</button>
-                        <button style="border-radius: 0"  class="btn btn-success"><i class="fa-solid fa-check-circle"></i> Published</button>
+                        <button class="btn btn-secondary" style="border-radius: 0"><i class="fa-solid fa-ban"></i>
+                            Unpublish
+                        </button>
+                        <button class="btn btn-success" style="border-radius: 0"><i
+                                class="fa-solid fa-check-circle"></i> Published
+                        </button>
                         <br>
                         <br>
-                        <button style="border-radius: 0"  class="btn btn-secondary"><i class="fa-solid fa-file-import me-2"></i>Import Existing Content</button>
-                        <br>
-
-                        <button  style="border-radius: 0; margin-top: 5px"  class="btn btn-secondary"><i class="fa-solid fa-file-import me-2"></i>Import from Commons</button>
-                        <br>
-
-                        <button style="border-radius: 0; margin-top: 5px"  class="btn btn-secondary"><i class="fa-solid fa-crosshairs me-2"></i>Choose Home Page</button>
-                        <br>
-
-                        <button style="border-radius: 0; margin-top: 5px"  class="btn btn-secondary"><i class="fa-solid fa-bar-chart me-2"></i>View Course Stream</button>
+                        <button class="btn btn-secondary" style="border-radius: 0"><i
+                                class="fa-solid fa-file-import me-2"></i>Import Existing Content
+                        </button>
                         <br>
 
-                        <button  style="border-radius: 0; margin-top: 5px"  class="btn btn-secondary"><i class="fa-solid fa-speaker-deck me-2"></i>New Announcements</button>
+                        <button class="btn btn-secondary" style="border-radius: 0; margin-top: 5px"><i
+                                class="fa-solid fa-file-import me-2"></i>Import from Commons
+                        </button>
                         <br>
 
-                        <button style="border-radius: 0; margin-top: 5px"  class="btn btn-secondary"><i class="fa-solid fa-bar-chart me-2"></i>New Analytics</button>
+                        <button class="btn btn-secondary" style="border-radius: 0; margin-top: 5px"><i
+                                class="fa-solid fa-crosshairs me-2"></i>Choose Home Page
+                        </button>
                         <br>
 
-                        <button style="border-radius: 0; margin-top: 5px"  class="btn btn-secondary"><i class="fa-solid fa-bell me-2"></i>View Course Notifications</button>
+                        <button class="btn btn-secondary" style="border-radius: 0; margin-top: 5px"><i
+                                class="fa-solid fa-bar-chart me-2"></i>View Course Stream
+                        </button>
+                        <br>
+
+                        <button class="btn btn-secondary" style="border-radius: 0; margin-top: 5px"><i
+                                class="fa-solid fa-speaker-deck me-2"></i>New Announcements
+                        </button>
+                        <br>
+
+                        <button class="btn btn-secondary" style="border-radius: 0; margin-top: 5px"><i
+                                class="fa-solid fa-bar-chart me-2"></i>New Analytics
+                        </button>
+                        <br>
+
+                        <button class="btn btn-secondary" style="border-radius: 0; margin-top: 5px"><i
+                                class="fa-solid fa-bell me-2"></i>View Course Notifications
+                        </button>
                         <br>
                         <br>
                         <b>To Do</b>

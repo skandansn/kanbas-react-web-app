@@ -5,11 +5,12 @@ function ArrayIndexAndLength() {
     return (
         <div>
             <h4>Array Index and Length</h4>
-            length1 = { length1 }<br />
-            index1 = { index1 }<br />
+            length1 = {length1}<br/>
+            index1 = {index1}<br/>
         </div>
     );
 
 
 }
+
 export default ArrayIndexAndLength

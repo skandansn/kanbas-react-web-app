@@ -4,8 +4,9 @@ function ImpliedReturn() {
     console.log(fourTimesFive);
     return (<>
         <h3>Implied Return</h3>
-        fourTimesFive = {fourTimesFive}<br />
+        fourTimesFive = {fourTimesFive}<br/>
         multiple(4, 5) = {multiply(4, 5)}
-</>);
+    </>);
 }
+
 export default ImpliedReturn

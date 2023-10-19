@@ -7,9 +7,10 @@ function FindFunction() {
     return (
         <div>
             <h4>Find Function</h4>
-            four = { four }<br />
-            string3 = { string3 }<br />
+            four = {four}<br/>
+            string3 = {string3}<br/>
         </div>
     );
 }
+
 export default FindFunction

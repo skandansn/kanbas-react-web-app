@@ -1,5 +1,3 @@
-import Classes from "./Classes";
-
 function DynamicStyling() {
     return (
         <div>
@@ -7,4 +5,5 @@ function DynamicStyling() {
         </div>
     );
 }
+
 export default DynamicStyling;

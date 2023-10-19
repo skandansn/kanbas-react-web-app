@@ -2,50 +2,60 @@ import ModuleList from "./ModuleList";
 import "../../index.css";
 import {useState} from "react";
 import {FaCheckCircle, FaList, FaPlus} from "react-icons/fa";
-
-function FaListDots() {
-    return null;
-}
-
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap.bundle.min';
 function Modules() {
-    const [isDropdownOpen, setDropdownOpen] = useState(false);
+    const [selectedOption, setSelectedOption] = useState('Option 1');
 
-    const toggleDropdown = () => {
-        setDropdownOpen(!isDropdownOpen);
+    const handleOptionChange = (event) => {
     };
 
     return (
-        <div style={{ display: 'flex' }}>
-            <div style={{ flex: 3.5, margin:"5px" }}>
-                <div className="m-3">
+        <div style={{display: 'flex'}}>
+            <div style={{flex: 3.5, margin: "5px"}}>
+                <div className="">
                     <div className="float-end">
-                        <button style={{ borderRadius: 0 }} className="btn btn-secondary">Collapse All</button>
-                        <button style={{ borderRadius: 0 }} className="btn btn-secondary">View Progress</button>
-                        <div className="dropdown d-inline">
+                        <button style={{borderRadius: 0}} className="btn btn-secondary ms-1">
+                            Collapse All
+                        </button>
+                        <button style={{borderRadius: 0}} className="btn btn-secondary ms-1">
+                            View Progress
+                        </button>
+                        <div className="dropdown ms-1 d-inline">
                             <button
-                                style={{ borderRadius: 0 }}
+                                style={{borderRadius: 0}}
                                 className="btn btn-secondary dropdown-toggle"
-                                onClick={toggleDropdown}
+                                id="dropdownMenuButton"
+                                data-bs-toggle="dropdown"
+                                aria-expanded="false"
                             >
-                                <FaCheckCircle style={{ color: 'green' }} /> Publish All
+                                <FaCheckCircle style={{color: 'green'}}/> Publish All
                             </button>
-                            {isDropdownOpen && (
-                                <ul className="dropdown-menu">
-                                    <li><a className="dropdown-item" href="#">Action</a></li>
-                                    <li><a className="dropdown-item" href="#">Another action</a></li>
-                                    <li><a className="dropdown-item" href="#">Something else here</a></li>
-                                </ul>
-                            )}
+                            <ul className="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <li>
+                                    <button className="dropdown-item" onClick={() => handleOptionChange('Option 1')}>
+                                        Option 1
+                                    </button>
+                                </li>
+                                <li>
+                                    <button className="dropdown-item" onClick={() => handleOptionChange('Option 2')}>
+                                        Option 2
+                                    </button>
+                                </li>
+                            </ul>
                         </div>
-                        <button style={{ borderRadius: 0 }} className="btn btn-danger"><FaPlus /> Module</button>
-                        <button style={{ borderRadius: 0 }} className="btn btn-secondary" ><FaList /> </button>
+                        <button style={{borderRadius: 0}} className="btn btn-danger ms-1">
+                            <FaPlus/> Module
+                        </button>
+                        <button style={{borderRadius: 0}} className="btn btn-secondary ms-1">
+                            <FaList/>
+                        </button>
                     </div>
                 </div>
                 <br></br>
+                <hr className="mt-4"/>
                 <br></br>
-                <hr />
-                <br></br>
-                <ModuleList />
+                <ModuleList/>
             </div>
 
         </div>

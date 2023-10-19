@@ -7,9 +7,10 @@ function FindIndex() {
     return (
         <div>
             <h4>FindIndex Function</h4>
-            fourIndex = { fourIndex }<br />
-            string3Index = { string3Index }<br />
+            fourIndex = {fourIndex}<br/>
+            string3Index = {string3Index}<br/>
         </div>
     );
 }
+
 export default FindIndex

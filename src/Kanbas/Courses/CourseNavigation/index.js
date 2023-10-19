@@ -1,5 +1,5 @@
 import React from "react";
-import { Link, useParams, useLocation } from "react-router-dom";
+import {Link, useLocation, useParams} from "react-router-dom";
 import "../../index.css"
 
 function CourseNavigation() {
@@ -24,11 +24,11 @@ function CourseNavigation() {
         "Settings"
     ];
 
-    const { courseId } = useParams();
-    const { pathname } = useLocation();
+    const {courseId} = useParams();
+    const {pathname} = useLocation();
 
     return (
-        <div id="sideBar2" className="d-none d-sm-block ms-3" style={{ width: 200 }}>
+        <div id="sideBar2" className="d-none d-sm-block ms-3" style={{width: '200px'}}>
             {links.map((link, index) => (
                 <div
                     key={index}

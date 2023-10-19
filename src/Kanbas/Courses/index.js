@@ -1,4 +1,3 @@
-import db from "../../Kanbas/Database";
 import {Navigate, Route, Routes, useLocation, useParams} from "react-router-dom";
 import CourseNavigation from "./CourseNavigation";
 import {FaBars} from "react-icons/fa";
@@ -10,18 +9,18 @@ import Grades from "./Grades";
 import "../index.css"
 
 function Courses() {
-    const { pathname } = useLocation();
+    const {pathname} = useLocation();
     const pathParts = pathname.split("/");
 
     // Get the last part of the URL path (excluding any potential trailing slash)
     const lastPathPart = pathParts[pathParts.length - 1] || "Home";
-    const { courseId } = useParams();
+    const {courseId} = useParams();
     return (
         <div className="flex-column">
             <div className="w-100 ">
-                <div style={{ display: "flex", flexDirection: "row"}}>
-                    <FaBars className="m-lg-3 mt-3 text-danger" style={{ fontSize: "large" }} />
-                    <nav style={{ "--bs-breadcrumb-divider": "'>'" }} className="mt-3" aria-label="breadcrumb">
+                <div style={{display: "flex", flexDirection: "row"}}>
+                    <FaBars className="m-lg-3 mt-3 text-danger" style={{fontSize: "large"}}/>
+                    <nav style={{"--bs-breadcrumb-divider": "'>'"}} className="mt-3" aria-label="breadcrumb">
                         <ol className="breadcrumb">
                             <li className="breadcrumb-item">
                                 <a href="#" className="text-danger text-decoration-none">{courseId}</a>
@@ -30,27 +29,23 @@ function Courses() {
                         </ol>
                     </nav>
                 </div>
-                <hr />
+                <hr/>
             </div>
-            <div className="d-flex flex-column ">
-                <CourseNavigation />
-                <div>
-                    <div
-                        className="overflow-y-scroll position-fixed bottom-0 end-0"
-                        style={{
-                            left: "300px",
-                            top: "50px",
-                        }}
-                    >
+            <div className="d-flex flex-row ">
+                <div style={{flex: 0.5}}>
+                    <CourseNavigation/>
+                </div>
+                <div style={{flex: 4}}>
+                    <div>
                         <br/>
                         <Routes>
-                            <Route path="/" element={<Navigate to="Home" />} />
-                            <Route path="Home" element={<Home/>} />
-                            <Route path="Modules" element={<Modules/>} />
-                            <Route path="Assignments" element={<Assignments/>} />
+                            <Route path="/" element={<Navigate to="Home"/>}/>
+                            <Route path="Home" element={<Home/>}/>
+                            <Route path="Modules" element={<Modules/>}/>
+                            <Route path="Assignments" element={<Assignments/>}/>
                             <Route path="Assignments/:assignmentId"
                                    element={<AssignmentEditor/>}/>
-                            <Route path="Grades" element={<Grades />} />
+                            <Route path="Grades" element={<Grades/>}/>
                         </Routes>
                     </div>
                 </div>
@@ -59,4 +54,5 @@ function Courses() {
 
     );
 }
+
 export default Courses;

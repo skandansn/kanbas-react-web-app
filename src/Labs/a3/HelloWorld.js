@@ -1,4 +1,5 @@
 import Nav from "../../Nav";
+
 function HelloWorld() {
     return (
         <div>
@@ -7,4 +8,5 @@ function HelloWorld() {
         </div>
     );
 }
+
 export default HelloWorld;

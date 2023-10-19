@@ -14,23 +14,24 @@ import FunctionDestructing from "./FunctionDestructing";
 
 function JavaScript() {
     console.log('Hello World!');
-    return(
+    return (
         <div>
             <h1>JavaScript</h1>
             <VariablesAndConstants/>
-            <VariableTypes />
-            <BooleanVariables />
-            <IfElse />
-            <TernaryOperator />
-            <WorkingWithFunctions />
-            <FunctionParenthesisAndParameters />
-            <WorkingWithArrays />
-            <TemplateLiterals />
-            <House />
-            <Spread />
-            <Destructing />
-            <FunctionDestructing />
+            <VariableTypes/>
+            <BooleanVariables/>
+            <IfElse/>
+            <TernaryOperator/>
+            <WorkingWithFunctions/>
+            <FunctionParenthesisAndParameters/>
+            <WorkingWithArrays/>
+            <TemplateLiterals/>
+            <House/>
+            <Spread/>
+            <Destructing/>
+            <FunctionDestructing/>
         </div>
     );
 }
+
 export default JavaScript

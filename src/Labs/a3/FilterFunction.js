@@ -7,10 +7,11 @@ function FilterFunction() {
     return (
         <div>
             <h4>Filter Function</h4>
-            numbersGreaterThan2 = { numbersGreaterThan2 }<br />
-            evenNumbers = { evenNumbers }<br />
-            oddNumbers = { oddNumbers }<br />
+            numbersGreaterThan2 = {numbersGreaterThan2}<br/>
+            evenNumbers = {evenNumbers}<br/>
+            oddNumbers = {oddNumbers}<br/>
         </div>
     );
 }
+
 export default FilterFunction

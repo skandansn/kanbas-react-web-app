@@ -6,8 +6,8 @@
     <link href="./index.css" rel="stylesheet"/>
 </head>
 <body>
-<div id="homePage" style="display: flex" class="">
-    <div id="sidebar" class=" bg-black vh-100" style="width: 85px" align="center">
+<div class="" id="homePage" style="display: flex">
+    <div align="center" class=" bg-black vh-100" id="sidebar" style="width: 85px">
         <div style="margin: 5px; padding: 7px"><a class="text-white" href=".././index.html"><i
                 class="fa-solid fa-n text-danger"></i></a></div>
         <div style="margin: 5px; padding: 7px"><a class="text-white" href="./profile/index.html"><i
@@ -28,12 +28,12 @@
                 class="fa-solid fa-question-circle text-danger"></i>Help</a></div>
     </div>
     <div class="flex-fill" style="margin-left: 20px;display: flex; flex-direction: column;">
-        <div style="display: flex; flex-direction: row" class="">
+        <div class="" style="display: flex; flex-direction: row">
             <i class="m-lg-3 mt-3 text-danger fa-solid fa-bars" style="font-size: large"></i>
-            <nav style="--bs-breadcrumb-divider: '>';" class="mt-3" aria-label="breadcrumb">
+            <nav aria-label="breadcrumb" class="mt-3" style="--bs-breadcrumb-divider: '>';">
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item"><a href="#">CS5610.12631.202410</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">Settings</li>
+                    <li aria-current="page" class="breadcrumb-item active">Settings</li>
                 </ol>
             </nav>
         </div>
@@ -50,7 +50,7 @@
                 </div>
                 <div style="margin: 7px; padding: 7px"><a class="text-danger" href="#">Quizzes</a></div>
                 <div style=" margin: 7px; padding: 7px"><a class="text-danger"
-                                                                                       href="./grades.html">Grades</a>
+                                                           href="./grades.html">Grades</a>
                 </div>
                 <div style="margin: 7px; padding: 7px"><a class="text-danger" href="#">People</a>
                 </div>
@@ -64,7 +64,9 @@
                 <div style="margin: 7px; padding: 7px"><a class="text-danger" href="#">Outcomes</a></div>
                 <div style="margin: 7px; padding: 7px"><a class="text-danger" href="#">Collaboration</a></div>
                 <div style="margin: 7px; padding: 7px"><a class="text-danger" href="#">Syllabus</a></div>
-                <div style="border-left:2px solid black; margin: 7px; padding: 7px"><a class="text-black" href="./settings.html">Settings</a></div>
+                <div style="border-left:2px solid black; margin: 7px; padding: 7px"><a class="text-black"
+                                                                                       href="./settings.html">Settings</a>
+                </div>
             </div>
             <div class="d-flex flex-row " style="flex: 1; margin-right: 50px">
                 <div style="display: flex; flex-direction: column; width: 100%">
@@ -72,22 +74,22 @@
                     <div>
                         <ul class="nav nav-tabs">
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">Course Details</a>
+                                <a aria-current="page" class="nav-link active" href="#">Course Details</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" style="color: red" href="#">Sections</a>
+                                <a class="nav-link" href="#" style="color: red">Sections</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link"  style="color: red" href="settingsNavigation.html">Navigation</a>
+                                <a class="nav-link" href="settingsNavigation.html" style="color: red">Navigation</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link"  style="color: red" href="#">Apps</a>
+                                <a class="nav-link" href="#" style="color: red">Apps</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link"  style="color: red" href="#">Feature Options</a>
+                                <a class="nav-link" href="#" style="color: red">Feature Options</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" style="color: red" href="#">Integrations</a>
+                                <a class="nav-link" href="#" style="color: red">Integrations</a>
                             </li>
                         </ul>
 
@@ -96,13 +98,16 @@
 
                     <div style="display: flex; flex-direction: column">
                         <div class="moduleItem">
-                            <h3 >Course Details</h3>
+                            <h3>Course Details</h3>
                             <div class="container">
-                                <table id="courseSettings" class="table ">
+                                <table class="table " id="courseSettings">
                                     <tbody>
                                     <tr>
                                         <th>Image:</th>
-                                        <td><button class="btn btn-secondary" style="border-radius: 0">Choose Image</button></td>
+                                        <td>
+                                            <button class="btn btn-secondary" style="border-radius: 0">Choose Image
+                                            </button>
+                                        </td>
                                     </tr>
                                     <tr>
                                         <th>Name:</th>
@@ -150,14 +155,16 @@
                                             </select>
                                             <br>
                                             Start:
-                                            <input id="from" type="date" class="form-control">
+                                            <input class="form-control" id="from" type="date">
                                             <br>
                                             End:
-                                            <input id="end" type="date" class="form-control">
-                                            <input type="checkbox" id="restrictStart" name="restrictStart" value="rs">
-                                            <label for="restrictStart">Restrict students from viewing course before term start date</label>
-                                        <input type="checkbox" id="restrictEnd" name="restrictEnd" value="re">
-                                            <label for="restrictEnd">Restrict students from viewing course after term end date</label>
+                                            <input class="form-control" id="end" type="date">
+                                            <input id="restrictStart" name="restrictStart" type="checkbox" value="rs">
+                                            <label for="restrictStart">Restrict students from viewing course before term
+                                                start date</label>
+                                            <input id="restrictEnd" name="restrictEnd" type="checkbox" value="re">
+                                            <label for="restrictEnd">Restrict students from viewing course after term
+                                                end date</label>
                                         </td>
                                     </tr>
                                     <tr>
@@ -185,15 +192,17 @@
                                     <tr>
                                         <th>Large Course</th>
                                         <td>
-                                            <input type="checkbox" id="largeCourse" name="largeCourse" value="largeCourse">
-                                            <label for="largeCourse">                                            Launch SpeedGrader filtered by Student Group
+                                            <input id="largeCourse" name="largeCourse" type="checkbox"
+                                                   value="largeCourse">
+                                            <label for="largeCourse"> Launch SpeedGrader filtered by Student Group
                                             </label>
                                         </td>
                                     </tr>
                                     <tr>
                                         <th>Grading Scheme:</th>
                                         <td>
-                                            <input type="checkbox" id="courseGrading" name="courseGrading" value="courseGrading">
+                                            <input id="courseGrading" name="courseGrading" type="checkbox"
+                                                   value="courseGrading">
                                             Enable course grading scheme SpeedGrader filtered by Student Group
                                         </td>
                                     </tr>
@@ -209,8 +218,10 @@
                                     <tr>
                                         <th>File Copyright:</th>
                                         <td>
-                                            <input type="checkbox" id="fileCopyright" name="fileCopyright" value="fileCopyright">
-                                            Copyright and license information must be provided for files before they are published
+                                            <input id="fileCopyright" name="fileCopyright" type="checkbox"
+                                                   value="fileCopyright">
+                                            Copyright and license information must be provided for files before they are
+                                            published
                                         </td>
                                     </tr>
                                     <tr>
@@ -221,7 +232,8 @@
                                                 <option>Option 2</option>
                                             </select>
                                             Include course in public course index
-                                            <input type="checkbox" id="includeCoursePublic" name="includeCoursePublic" value="includeCoursePublic">
+                                            <input id="includeCoursePublic" name="includeCoursePublic" type="checkbox"
+                                                   value="includeCoursePublic">
 
                                         </td>
                                     </tr>
@@ -238,7 +250,8 @@
                                     <tr>
                                         <th>Mastery Paths:</th>
                                         <td>
-                                            <input type="checkbox" id="masteryPath" name="masteryPath" value="masteryPath">
+                                            <input id="masteryPath" name="masteryPath" type="checkbox"
+                                                   value="masteryPath">
 
                                             Enable individual learning paths for students based on assessment
                                         </td>
@@ -253,8 +266,6 @@
                                     </tbody>
                                 </table>
                             </div>
-
-
 
 
                         </div>
