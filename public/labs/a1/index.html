@@ -16,10 +16,12 @@ etc. HTML heading tags can be used to format plain text so that it renders in a 
 heading tags: h1, h2, h3, h4, h5, and h6. Tag h1 is the largest heading and h6 is the smallest heading.
 <h2>Paragraph Tag</h2>
 <p>
-    This is the first paragraph. The paragraph tag is used to format vertical gaps between long pieces of text like this one.
+    This is the first paragraph. The paragraph tag is used to format vertical gaps between long pieces of text like this
+    one.
 </p>
 <p>
-    This is the second paragraph. Even though there is a deliberate white gap between the paragraph above and this paragraph, by default browsers render them as one contiguous piece of text as shown here on the right.
+    This is the second paragraph. Even though there is a deliberate white gap between the paragraph above and this
+    paragraph, by default browsers render them as one contiguous piece of text as shown here on the right.
 </p>
 <p>
     This is the third paragraph. Wrap each paragraph with the paragraph tag to tell browsers to render the gaps.
@@ -83,65 +85,65 @@ My favorite books (in no particular order)
     </tr>
     </tfoot>
 </table>
-<img src="moonPic.jpg"
-     width="250px"
-     height="200px"/>
+<img height="200px"
+     src="moonPic.jpg"
+     width="250px"/>
 <h2>Image tag</h2>
 
 Loading an image from the internet:<br/>
 
-<img width="400px"
-     src="https://www.staradvertiser.com/wp-content/uploads/2021/08/web1_Starship-gap2.jpg"/>
+<img src="https://www.staradvertiser.com/wp-content/uploads/2021/08/web1_Starship-gap2.jpg"
+     width="400px"/>
 <br/>
 
 Loading a local image:<br/>
 
-<img src="teslabot.webp"
-     height="200px"/>
-<input  type="text"
-        placeholder="hint"
-        title="tooltip"
-        value="what is this image?"/>
+<img height="200px"
+     src="teslabot.webp"/>
+<input placeholder="hint"
+       title="tooltip"
+       type="text"
+       value="what is this image?"/>
 <h2>Text fields</h2>
 <form id="text-fields">
     <label for="text-fields-username">Username:</label>
     <input id="text-fields-username" placeholder="jdoe"/><br/>
     <label for="text-fields-password">Password:</label>
-    <input type="password" id="text-fields-password"
+    <input id="text-fields-password" type="password"
            value="123@#$asd"/><br/>
     <label for="text-fields-first-name">First name:</label>
-    <input type="text" id="text-fields-first-name"
-           title="John"/><br/>
+    <input id="text-fields-first-name" title="John"
+           type="text"/><br/>
     <label for="text-fields-last-name">Last name:</label>
-    <input type="text" id="text-fields-last-name"
-           placeholder="Doe" value="Wonderland"/>
+    <input id="text-fields-last-name" placeholder="Doe"
+           type="text" value="Wonderland"/>
     <!-- copy rest of form elements here -->
     <h2>Other field types</h2>
     <label for="text-fields-email">
         Email:
     </label>
-    <input type="email"
+    <input id="text-fields-email"
            placeholder="jdoe@somewhere.com"
-           id="text-fields-email"/><br/>
+           type="email"/><br/>
     <label for="text-fields-salary-start">
         Starting salary:
     </label>
-    <input type="number"
-           id="text-fields-salary-start"
+    <input id="text-fields-salary-start"
            placeholder="1000"
+           type="number"
            value="100000"/><br/>
     <label for="text-fields-rating">
         Rating:
     </label>
-    <input type="range" id="text-fields-rating"
+    <input id="text-fields-rating" max="5"
            placeholder="Doe"
-           max="5"
+           type="range"
            value="4"/><br/>
     <label for="text-fields-dob">
         Date of birth:
     </label>
-    <input type="date"
-           id="text-fields-dob"
+    <input id="text-fields-dob"
+           type="date"
            value="2000-01-21"/><br/>
 </form>
 <h2>Text boxes</h2>
@@ -161,7 +163,8 @@ Loading a local image:<br/>
     <option value="COMEDY">Comedy</option>
     <option value="DRAMA">Drama</option>
     <option selected value="SCIFI">
-        Science Fiction</option>
+        Science Fiction
+    </option>
     <option value="FANTASY">Fantasy</option>
 </select>
 
@@ -173,7 +176,8 @@ Loading a local image:<br/>
     <option selected value="COMEDY">Comedy</option>
     <option value="DRAMA">Drama</option>
     <option selected value="SCIFI">
-        Science Fiction</option>
+        Science Fiction
+    </option>
     <option value="FANTASY">Fantasy</option>
 </select>
 <h2>File upload</h2>
@@ -182,32 +186,32 @@ Loading a local image:<br/>
 
 <label>Favorite movie genre:</label><br/>
 
-<input type="radio" value="COMEDY"
-       name="radio-genre" id="radio-comedy"/>
+<input id="radio-comedy" name="radio-genre"
+       type="radio" value="COMEDY"/>
 <label for="radio-comedy">Comedy</label><br/>
-<input type="radio" value="DRAMA"
-       name="radio-genre" id="radio-drama"/>
+<input id="radio-drama" name="radio-genre"
+       type="radio" value="DRAMA"/>
 <label for="radio-drama">Drama</label><br/>
-<input type="radio" value="SCIFI"
-       name="radio-genre" id="radio-scifi" checked/>
+<input checked id="radio-scifi"
+       name="radio-genre" type="radio" value="SCIFI"/>
 <label for="radio-scifi">Science Fiction</label><br/>
-<input type="radio" value="FANTASY"
-       name="radio-genre" id="radio-fantasy"/>
+<input id="radio-fantasy" name="radio-genre"
+       type="radio" value="FANTASY"/>
 <label for="radio-fantasy">Fantasy</label>
 <h2>Checkboxes</h2>
 <label>Favorite movie genre:</label>
 <br/>
-<input type="checkbox" value="COMEDY"
-       name="check-genre" id="chkbox-comedy" checked/>
-<label for="chkbox-comedy">Comedy</label>    <br/>
-<input type="checkbox" value="DRAMA"
-       name="check-genre" id="chkbox-drama"/>
-<label for="chkbox-drama">Drama</label>    <br/>
-<input type="checkbox" value="SCIFI"
-       name="check-genre" id="chkbox-scifi" checked/>
+<input checked id="chkbox-comedy"
+       name="check-genre" type="checkbox" value="COMEDY"/>
+<label for="chkbox-comedy">Comedy</label> <br/>
+<input id="chkbox-drama" name="check-genre"
+       type="checkbox" value="DRAMA"/>
+<label for="chkbox-drama">Drama</label> <br/>
+<input checked id="chkbox-scifi"
+       name="check-genre" type="checkbox" value="SCIFI"/>
 <label for="chkbox-scifi">Science Fiction</label> <br/>
-<input type="checkbox" value="FANTASY"
-       name="check-genre" id="chkbox-fantasy"/>
+<input id="chkbox-fantasy" name="check-genre"
+       type="checkbox" value="FANTASY"/>
 <label for="chkbox-fantasy">Fantasy</label>
 <h2>Anchor tag</h2>
 

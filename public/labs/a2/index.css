@@ -6,58 +6,99 @@ p#id-selector-1 {
     background-color: red;
     color: white;
 }
+
 p#id-selector-2 {
     background-color: yellow;
     color: black;
 }
+
 .wd-class-selector {
     background-color: yellow;
     color: blue;
 }
+
 .wd-selector-1 .wd-selector-3 {
     background-color: red;
     color: white;
 }
+
 .wd-selector-2 > .wd-selector-3 > .wd-selector-4 {
     background-color: yellow;
     color: blue;
 }
+
+
 .some-css-selector {
     color: blue;
 }
-.wd-fg-color-black { color: black; }
-.wd-fg-color-white { color: white; }
-.wd-fg-color-blue { color: #7070ff; }
-.wd-fg-color-red { color: #ff7070; }
-.wd-fg-color-green { color: green; }
+
+.wd-fg-color-black {
+    color: black;
+}
+
+.wd-fg-color-white {
+    color: white;
+}
+
+.wd-fg-color-blue {
+    color: #7070ff;
+}
+
+.wd-fg-color-red {
+    color: #ff7070;
+}
+
+.wd-fg-color-green {
+    color: green;
+}
+
 
 .wd-bg-color-yellow {
     background-color: #ffff07;
 }
+
+
 .wd-bg-color-blue {
     background-color: #7070ff;
 }
+
 .wd-bg-color-red {
     background-color: #ff7070;
 }
+
+
 .wd-bg-color-green {
     background-color: green;
 }
 
 .wd-border-fat {
-    border-width: 20px 30px 20px 30px; }
+    border-width: 20px 30px 20px 30px;
+}
+
 .wd-border-thin {
-    border-width: 4px; }
+    border-width: 4px;
+}
+
 .wd-border-solid {
-    border-style: solid; }
+    border-style: solid;
+}
+
 .wd-border-dashed {
-    border-style: dashed; }
+    border-style: dashed;
+}
+
 .wd-border-yellow {
-    border-color: #ffff07; }
+    border-color: #ffff07;
+}
+
 .wd-border-red {
-    border-color: #ff7070; }
+    border-color: #ff7070;
+}
+
 .wd-border-blue {
-    border-color: #7070ff; }
+    border-color: #7070ff;
+}
+
 
 .wd-padded-top-left {
     padding-top: 50px;
@@ -126,11 +167,13 @@ p#id-selector-2 {
     bottom: 30px;
     left: 30px;
 }
+
 .wd-pos-relative-nudge-down-right {
     position: relative;
     top: 20px;
     left: 20px;
 }
+
 .wd-pos-relative {
     position: relative;
 }
@@ -140,15 +183,19 @@ p#id-selector-2 {
     top: 10px;
     left: 10px;
 }
+
 .wd-pos-absolute-50-50 {
     position: absolute;
     top: 50px;
     left: 50px;
 }
+
 .wd-pos-absolute-120-20 {
     position: absolute;
     top: 20px;
-    left: 120px;      }
+    left: 120px;
+}
+
 
 .wd-pos-fixed {
     position: fixed;
@@ -181,6 +228,7 @@ p#id-selector-2 {
     width: 50%;
     float: left;
 }
+
 .wd-grid-col-third-page {
     width: 33%;
     float: left;
