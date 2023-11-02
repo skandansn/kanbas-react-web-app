@@ -1,6 +1,7 @@
 import {Link} from "react-router-dom";
 import db from "../Database";
 import "../index.css";
+import { useState } from "react";
 
 const dashboardStyle = {
     flex: 1,
@@ -20,9 +21,9 @@ const courseCardStyle = {
     width: '300px',
 };
 
-function Dashboard() {
-    const courses = db.courses;
-
+function Dashboard({ courses, course, setCourse, addNewCourse,
+                       deleteCourse, updateCourse }
+) {
     return (
         <div>
             <div style={dashboardStyle}>
@@ -37,6 +38,56 @@ function Dashboard() {
                 <div>
                     <div>
                         <h3 style={sectionTitleStyle}>Published Courses ({courses.length})</h3>
+                        <div className="mt-3" style={{ marginLeft: "15px" }}>
+                            <h5>Add or edit a course</h5>
+                            <div className="row mb-3">
+                                <div className="col-md-6">
+                                    <input
+                                        value={course.name}
+                                        className="form-control"
+                                        onChange={(e) => setCourse({ ...course, name: e.target.value })}
+                                        placeholder="Course Name"
+                                    />
+                                </div>
+                                <div className="col-md-6">
+                                    <input
+                                        value={course.number}
+                                        className="form-control"
+                                        onChange={(e) => setCourse({ ...course, number: e.target.value })}
+                                        placeholder="Course Number"
+                                    />
+                                </div>
+                            </div>
+                            <div className="row mb-3">
+                                <div className="col-md-6">
+                                    <input
+                                        value={course.startDate}
+                                        className="form-control"
+                                        type="date"
+                                        onChange={(e) => setCourse({ ...course, startDate: e.target.value })}
+                                        placeholder="Start Date"
+                                    />
+                                </div>
+                                <div className="col-md-6">
+                                    <input
+                                        value={course.endDate}
+                                        className="form-control"
+                                        type="date"
+                                        onChange={(e) => setCourse({ ...course, endDate: e.target.value })}
+                                        placeholder= "End Date"
+                                    />
+                                </div>
+                            </div>
+                            <button onClick={addNewCourse} className="btn btn-success" style={{ borderRadius: '0px' }}>
+                                Add
+                            </button>
+                            <button onClick={updateCourse} className="btn btn-primary ms-1" style={{ borderRadius: '0px' }}>
+                                Update
+                            </button>
+                        </div>
+
+
+
                         <hr/>
                     </div>
                     <br/>
@@ -47,10 +98,31 @@ function Dashboard() {
                                 <div className="card-body">
                                     <h5 className="card-title">{course.name}</h5>
                                     <p className="card-text">Number: {course.number}</p>
-                                    <Link to={`/Kanbas/Courses/${course._id}`} className="btn btn-danger"
+                                    <Link to={`/Kanbas/Courses/${course._id}`} className="btn btn-secondary"
                                           style={{borderRadius: '0'}}>
                                         View Details
                                     </Link>
+                                    <button
+                                        onClick={(event) => {
+                                            event.preventDefault();
+                                            deleteCourse(course._id);
+                                        }}
+                                        style={{borderRadius: '0'}}
+                                    className="btn btn-danger ms-1">
+                                        Delete
+                                    </button>
+                                    <button
+                                        onClick={(event) => {
+                                            event.preventDefault();
+                                            setCourse(course);
+                                        }}
+                                    style={{borderRadius: '0'}}
+                                        className="btn btn-warning ms-1"
+                                    >
+                                        Edit
+                                    </button>
+
+
                                 </div>
                             </div>
                         ))}

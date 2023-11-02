@@ -8,13 +8,14 @@ import AssignmentEditor from "./Assignments/AssignmentEditor";
 import Grades from "./Grades";
 import "../index.css"
 
-function Courses() {
+function Courses({ courses }) {
     const {pathname} = useLocation();
     const pathParts = pathname.split("/");
 
     // Get the last part of the URL path (excluding any potential trailing slash)
     const lastPathPart = pathParts[pathParts.length - 1] || "Home";
     const {courseId} = useParams();
+    const course = courses.find((course) => course._id === courseId);
     return (
         <div className="flex-column">
             <div className="w-100 ">
@@ -23,7 +24,7 @@ function Courses() {
                     <nav style={{"--bs-breadcrumb-divider": "'>'"}} className="mt-3" aria-label="breadcrumb">
                         <ol className="breadcrumb">
                             <li className="breadcrumb-item">
-                                <a href="#" className="text-danger text-decoration-none">{courseId}</a>
+                                <a href="#" className="text-danger text-decoration-none">{course._id}</a>
                             </li>
                             <li className="breadcrumb-item active" aria-current="page">{lastPathPart}</li>
                         </ol>
