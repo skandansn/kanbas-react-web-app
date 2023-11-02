@@ -16,6 +16,7 @@ body {
 }
 
 #sidebar a {
+
     color: #000;
     text-decoration: none;
 
@@ -40,6 +41,7 @@ body {
 
 #sideBar2 {
     overflow-wrap: break-word;
+
 }
 
 .course-card {
@@ -49,6 +51,7 @@ body {
 }
 
 #moduleContent a {
+
     text-decoration: none;
     color: black;
 }
@@ -88,7 +91,9 @@ body {
 
 }
 
+ 
 #courseSettings td, th {
+
     border-bottom: none;
 }
 
