@@ -83,25 +83,25 @@ function WorkingWithObjects() {
                 className="form-control mb-2 w-75"
                 type="text" />
             <h4>Retrieving Objects</h4>
-            <a href="http://localhost:4000/a5/assignment"
+            <a href="https://kanbas-node-server-app-4cso.onrender.com/a5/assignment"
                className="btn btn-primary me-2">
                 Get Assignment
             </a>
             <h4>Retrieving Properties</h4>
             <a
-                href="http://localhost:4000/a5/assignment/title"
+                href="https://kanbas-node-server-app-4cso.onrender.com/a5/assignment/title"
                 className="btn btn-primary me-2">
                 Get Title
             </a>
             <h4>Retrieving Score</h4>
             <a
-                href="http://localhost:4000/a5/assignment/score"
+                href="https://kanbas-node-server-app-4cso.onrender.com/a5/assignment/score"
                 className="btn btn-primary me-2">
                 Get Score
             </a>
             <h4>Retrieving Completed status</h4>
             <a
-                href="http://localhost:4000/a5/assignment/completed"
+                href="https://kanbas-node-server-app-4cso.onrender.com/a5/assignment/completed"
                 className="btn btn-primary me-2">
                 Get Completed
             </a>
