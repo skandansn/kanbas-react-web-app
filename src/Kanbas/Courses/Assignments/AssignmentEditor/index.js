@@ -3,7 +3,7 @@ import {Link, useLocation, useNavigate, useParams} from "react-router-dom";
 import db from "../../../Database";
 import "../../../index.css"
 import { useSelector, useDispatch } from "react-redux";
-import {addAssignment, setAssignment, updateAssignment} from "../assignmentReducer";
+import {addAssignment, setAssignment, setAssignments, updateAssignment} from "../assignmentReducer";
 import {addModule, updateModule} from "../../Modules/modulesReducer";
 import {createModule} from "../../Modules/client";
 import * as client from "../../Assignments/client"
@@ -18,22 +18,22 @@ function AssignmentEditor() {
     const {courseId} = useParams();
     const navigate = useNavigate();
 
-    const handleUpdateAssignment =  () => {
-        const status = client.updateAssignment(courseId, assignment);
+    const handleUpdateAssignment = async () => {
+        const status = await client.updateAssignment(courseId, assignment);
         dispatch(updateAssignment(assignment));
     };
 
-    const handleAddAssignment =  () => {
-        createAssignment(courseId, assignment).then((assignment) => {
+    const handleAddAssignment = async  () => {
+        await createAssignment(courseId, assignment).then((assignment) => {
             dispatch(addAssignment(assignment));
         });
     };
     const handleSave = async () => {
         if (addOrEdit === "Add") {
-            handleAddAssignment();
+            await handleAddAssignment();
         }
         else {
-            handleUpdateAssignment();
+            await handleUpdateAssignment();
         }
         console.log("Actually saving assignment TBD in later assignments");
         navigate(`/Kanbas/Courses/${courseId}/Assignments`);
