@@ -5,21 +5,39 @@ import "../../index.css"
 import {FaCheckCircle, FaEllipsisV, FaList, FaPlus} from "react-icons/fa";
 import { useSelector, useDispatch } from "react-redux";
 import {deleteAssignment, setAssignment, updateAssignment} from "./assignmentReducer";
-
+import { useState, useEffect } from "react";
+import axios from "axios";
 
 function Assignments() {
-    const {courseId} = useParams();
-    const assignments = useSelector((state) => state.assignmentReducer.assignments);
-    const assignment = useSelector((state) => state.assignmentReducer.assignment);
-    const dispatch = useDispatch();
-    const courseAssignments = assignments.filter(
-        (assignment) => assignment.course === courseId);
 
-    const handleDelete = (id) => {
+    const {courseId} = useParams();
+
+    const API_BASE = process.env.REACT_APP_API_BASE;
+    const URL = `${API_BASE}/courses/${courseId}/assignments`;
+    const assignment = useSelector((state) => state.assignmentReducer.assignment);
+    const [assignments, setAssignments] = useState([]);
+    const dispatch = useDispatch();
+    const findAllAssignmentsForThisCourse = async () => {
+        const response = await axios.get(URL);
+        setAssignments(response.data);
+    };
+
+    useEffect(() => {
+        findAllAssignmentsForThisCourse();
+    }, []);
+
+
+    const handleDelete = async (id) => {
+        const assignment = assignments.find((assignment) => assignment._id === id);
+        setAssignment(assignment);
         const confirmation = window.confirm("Are you sure you want to delete this assignment?");
 
         if(confirmation) {
-            dispatch(deleteAssignment(id));
+            const response = await axios.delete(
+                `${URL}/${id}`
+            );
+            setAssignments(assignments.filter(
+                (c) => c._id !== assignment._id));
         }
     }
     return (
@@ -56,7 +74,7 @@ function Assignments() {
                                 <FaEllipsisV style={{margin: '1px', padding: '1px'}}/>
                             </div>
                         </li>
-                        {courseAssignments.map((assignment) => (
+                        {assignments.map((assignment) => (
                             <div style={{ borderLeft: "3px solid #5cb85c", borderRadius: 0, display: "flex",marginTop:"5px", marginBottom:"5px" }}>
                                 <Link
                                     key={assignment._id}

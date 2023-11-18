@@ -3,7 +3,7 @@ import db from "../../Database";
 
 
 const initialState = {
-    assignments: db.assignments,
+    assignments: [],
     assignment:   {
         "_id": Date.now(),
         "title": "Assignment",
@@ -18,6 +18,10 @@ const assignmentSlice = createSlice({
     name: "assignments",
     initialState,
     reducers: {
+        setAssignments: (state, action) => {
+            state.assignments = action.payload;
+        },
+
         addAssignment: (state, action) => {
             state.assignments = [
                 {...action.payload, _id: new Date().getTime().toString()},
@@ -47,5 +51,5 @@ const assignmentSlice = createSlice({
     },
     });
 
-export const { addAssignment, deleteAssignment, updateAssignment, setAssignment } = assignmentSlice.actions;
+export const { setAssignments, addAssignment, deleteAssignment, updateAssignment, setAssignment } = assignmentSlice.actions;
 export default assignmentSlice.reducer

@@ -7,6 +7,8 @@ import Assignments from "./Assignments";
 import AssignmentEditor from "./Assignments/AssignmentEditor";
 import Grades from "./Grades";
 import "../index.css"
+import { useState, useEffect } from "react";
+import axios from "axios";
 
 function Courses({ courses }) {
     const {pathname} = useLocation();
@@ -15,7 +17,22 @@ function Courses({ courses }) {
     // Get the last part of the URL path (excluding any potential trailing slash)
     const lastPathPart = pathParts[pathParts.length - 1] || "Home";
     const {courseId} = useParams();
-    const course = courses.find((course) => course._id === courseId);
+
+    const API_BASE = process.env.REACT_APP_API_BASE;
+    const URL = `${API_BASE}/courses`;
+    const [course, setCourse] = useState({});
+    const findCourseById = async (courseId) => {
+        const response = await axios.get(
+            `${URL}/${courseId}`
+        );
+        setCourse(response.data);
+    };
+
+    useEffect(() => {
+        findCourseById(courseId);
+    }, [courseId]);
+
+
     return (
         <div className="flex-column">
             <div className="w-100 ">

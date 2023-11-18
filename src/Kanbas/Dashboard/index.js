@@ -105,7 +105,7 @@ function Dashboard({ courses, course, setCourse, addNewCourse,
                                     <button
                                         onClick={(event) => {
                                             event.preventDefault();
-                                            deleteCourse(course._id);
+                                            deleteCourse(course);
                                         }}
                                         style={{borderRadius: '0'}}
                                     className="btn btn-danger ms-1">
