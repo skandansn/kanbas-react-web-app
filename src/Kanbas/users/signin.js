@@ -5,15 +5,21 @@ function Signin() {
     const [credentials, setCredentials] = useState({ username: "", password: "" });
     const navigate = useNavigate();
     const signin = async () => {
-        await client.signin(credentials);
-        navigate("/Kanbas/Account");
+        var account = await client.signin(credentials);
+        if (account) {
+            navigate("/Kanbas/Account");
+        }
+        else {
+            alert("Invalid username or password");
+        }
     };
     return (
         <div>
             <h1>Signin</h1>
-            <input className=" form-control" value={credentials.username} onChange={(e) => setCredentials({...credentials, username: e.target.value})}/>
-            <input className="form-control" type="password" value={credentials.password} onChange={(e) => setCredentials({...credentials, password: e.target.value})}/>
-            <button className="btn btn-primary" onClick={signin}> Signin </button>
+            <br></br>
+            <input className="w-25 form-control" placeholder="Enter username" value={credentials.username} onChange={(e) => setCredentials({...credentials, username: e.target.value})}/>
+            <input className="w-25  form-control" type="password" placeholder="Enter password" value={credentials.password} onChange={(e) => setCredentials({...credentials, password: e.target.value})}/>
+            <button className="btn btn-primary mt-1" style={{borderRadius: 0, backgroundColor:"red"}} onClick={signin}> Signin </button>
         </div>
     );
 }

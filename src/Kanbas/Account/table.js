@@ -60,17 +60,17 @@ function UserTable() {
                 </tr>
                 <tr>
                     <td>
-                        <input className="form-control" value={user.password} onChange={(e) => setUser({ ...user, password: e.target.value })}/>
-                        <input className="form-control" value={user.username} onChange={(e) => setUser({ ...user, username: e.target.value })}/>
+                        <input type="password" placeholder="Enter password" className="form-control" value={user.password} onChange={(e) => setUser({ ...user, password: e.target.value })}/>
+                        <input placeholder={"Enter Username"} className="form-control" value={user.username} onChange={(e) => setUser({ ...user, username: e.target.value })}/>
                     </td>
                     <td>
-                        <input className="form-control" value={user.firstName} onChange={(e) => setUser({ ...user, firstName: e.target.value })}/>
+                        <input placeholder={"Enter First Name"} className="form-control" value={user.firstName} onChange={(e) => setUser({ ...user, firstName: e.target.value })}/>
                     </td>
                     <td>
-                        <input  className="form-control" value={user.lastName} onChange={(e) => setUser({ ...user, lastName: e.target.value })}/>
+                        <input placeholder={"Enter Last Name"} className="form-control" value={user.lastName} onChange={(e) => setUser({ ...user, lastName: e.target.value })}/>
                     </td>
                     <td>
-                        <select className="form-control" value={user.role} onChange={(e) => setUser({ ...user, role: e.target.value })}>
+                        <select placeholder={"Select Role"} className="form-control" value={user.role} onChange={(e) => setUser({ ...user, role: e.target.value })}>
                             <option value="USER">User</option>
                             <option value="ADMIN">Admin</option>
                             <option value="FACULTY">Faculty</option>
